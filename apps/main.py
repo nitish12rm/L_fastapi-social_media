@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Response, status, HTTPException,Depends,COR
+from fastapi import FastAPI, Response, status, HTTPException,Depends
 from typing import Any
 import psycopg2
 from psycopg2.extras import RealDictCursor
