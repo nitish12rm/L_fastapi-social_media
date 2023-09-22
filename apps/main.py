@@ -28,19 +28,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 print(settings.database_password)
-while True:
-    try:
-        #connect to a database
-        conn = psycopg2.connect(host='localhost',database='fastapi-proj1',user='postgres',password='nkgisgreat',cursor_factory=RealDictCursor)
-        #open a cursor to perform db opn
-        cursor = conn.cursor()
-        print('database connnection was successfull')
-        break
-    except Exception as error:
-        print("Cpnnecting to DB failed")
-        print("Error: ",error)
-        #har 2 sec bad exevute
-        time.sleep(2)
+# while True:
+#     try:
+#         #connect to a database
+#         # conn = psycopg2.connect(host='localhost',database='fastapi-proj1',user='postgres',password='nkgisgreat',cursor_factory=RealDictCursor)
+#         #open a cursor to perform db opn
+#         cursor = conn.cursor()
+#         print(settings.database_url)
+#         print('database connnection was successfull')
+#         break
+#     except Exception as error:
+#         print("Cpnnecting to DB failed")
+#         print("Error: ",error)
+#         #har 2 sec bad exevute
+#         time.sleep(2)
 
          
 
